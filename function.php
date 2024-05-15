@@ -50,26 +50,8 @@ include "database/conf.php";
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
      
-                <a class="fas fa-search" id="search-icon"></a>
-                <a class="dropdown fas fa-tint" data-dropdown="#color-gallery">
-                
-                            <div class="dropdown-menu" id="color-gallery">';
-                            $q=$conn->query("SELECT * FROM `colors`  ORDER  by clr_sts ASC") or die("<a>No color found</a>");
-                            if($q){
-                                while($row = mysqli_fetch_assoc($q)){
-                                echo  '<a class="dropdown-item color-item '.$row["clr_sts"].' "  data-color-sts = "'.$row["clr_sts"].'" data-color="'.$row["clr"].'"; data-hsl="'.$row["hsl"].'" data-color-alt="'.$row["color_alt"]
-                                .'" data-color-lighter="'.$row["color_lighter"].'" data-hsl="340" style="--clr:'.$row["clr"].';" href="#">
-                                        </a>';
-                            }
-                            } 
-                            
-                        echo' </div>
-                        </a>
-                   
-
-                
-                                           <a  id="CartCount" class="fas fa-shopping-cart cart_show"></a>
-                            
+                <a class="fas fa-search" id="search-icon"></a>                               
+                        <a  id="CartCount" class="fas fa-shopping-cart cart_show"></a>
                         </div>
                     <div class="user" id="user_login_header"></div>
                         
@@ -305,8 +287,8 @@ function introduction()
 
                     <div class="content">
                         <h3>best food in the country</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sequi corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
+                        <p>At our market, we are proud to offer you great food that tastes amazing and is always fresh. We work with local farmers and trusted suppliers to make sure you get the best fruits, vegetables, meats, and dairy products.</p>
+                        <p>Our food is picked for its quality and flavor, so you can enjoy really good meals every day. When you shop with us you are getting top-notch, fresh food and supporting local producers too. Come visit us for great food that keeps you and your family healthy and happy! </p>
                         <div class="icons-container">
                        
                         <div class="icons">
@@ -357,22 +339,7 @@ function special_menu()
             <!-- menu section ends -->
             ';
 };
-function order_contact()
-{
-    echo '<!-- order section starts  -->
 
-    <section class="order" id="order">
-    <div class="title-head">
-        <h3 class="sub-heading"> order now </h3>
-        <h1 class="heading"> free and fast </h1>
-    </div>
-        <div id="ShowOrderFormHtml"></div>
-    
-    </section>
-    
-    <!-- order section ends -->
-    ';
-};
 
 function sign_up()
 {
@@ -519,7 +486,6 @@ function footers()
                 <a href="#">about</a>
                 <a href="#">menu</a>
                 <a href="#">reivew</a>
-                <a href="#">order</a>
             </div>
     
             <div class="box">

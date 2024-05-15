@@ -8,6 +8,4 @@ dishes();
 msgModals();
 introduction();
 special_menu();
-review();
-order_contact();
 footers();

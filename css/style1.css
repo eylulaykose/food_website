@@ -463,7 +463,7 @@ padding: 0rem 3rem;
 .about .row .content .icons-container .icons{
     background:var(--first-color-alt);
     border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.2);
+    border:.1rem solid rgba(223, 64, 64, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;

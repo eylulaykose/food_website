@@ -1,11 +1,6 @@
 <?php
 session_start();
 include 'conf.php';
-
-
-
-
-
 if ($_GET["action"] == "check") {
 
     if (isset($_SESSION["unique_id"])) {
